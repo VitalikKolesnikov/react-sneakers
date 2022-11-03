@@ -64,6 +64,7 @@ header {
     padding: 30px;
     width: 220px;
     border-radius: 40px;
+    margin-right: 30px;
     .card-button {
       display: flex;
       justify-content: space-between;
@@ -88,4 +89,8 @@ header {
     width: 32px;
     cursor: pointer;
 
+  }
+
+  .sneakers {
+    display: flex;
   }
