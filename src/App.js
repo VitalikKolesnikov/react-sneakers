@@ -31,6 +31,9 @@ function App() {
         </div>
         <div className="sneakers">
         <div className="card">
+          <div className="favorite">
+            <img src="/img/heart-unl.svg" alt="heart"/>
+          </div>
           <img width={133} height={112} src="/img/sneakers/1.jpg" alt="#"/>
           <h5>Мужские Кроссовки Nike Air Max 270</h5>
           <div className="card-button">
