@@ -22,7 +22,13 @@ function App() {
           </ul>
       </header>
       <div className="content">
-        <h1>ВСЕ КРОССОВКИ</h1>
+        <div className="search">
+          <h1>ВСЕ КРОССОВКИ</h1>
+          <div className="search-block">
+            <img src="/img/search.svg" alt="search"/>
+            <input placeholder="Поиск..."/>
+          </div>
+        </div>
         <div className="sneakers">
         <div className="card">
           <img width={133} height={112} src="/img/sneakers/1.jpg" alt="#"/>

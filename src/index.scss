@@ -1,10 +1,12 @@
 body {
   margin: 0;
-  font-family: Inter,system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  font-family: Inter,system-ui;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -55,7 +57,7 @@ header {
     padding: 40px;
     h1 {
       margin: 0;
-      margin-bottom: 40px;
+      
     }
   }
 
@@ -69,6 +71,11 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    span {
+      opacity: 0.5;
+      font-size: 13px;
+      text-transform: uppercase;
     }
     .card-price {
       display: flex;
@@ -94,3 +101,27 @@ header {
   .sneakers {
     display: flex;
   }
+
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+  }
+ 
+  .search-block {
+    border: 1px solid #f3f3f3;
+    border-radius: 10px;
+    padding: 0px 15px;
+    img {
+      margin-right: 10px;
+    }
+
+    input {
+      border: 0;
+      padding: 13px;
+      font-size: 16px;
+    }
+  }
+  
