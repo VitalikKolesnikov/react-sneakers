@@ -3,6 +3,41 @@
 function App() {
   return (
     <div className="wrapper">
+      <div className="overlay">
+        <div className="drawer">
+          <h2>Корзина</h2>
+            <div className="items">
+              <div className="cartItem">
+                <img width={80} height={80} src="/img/sneakers/1.jpg"/>
+                <div className="cartName">
+                  <p>Мужские Кроссовки Nike Air Max 270</p>
+                  <b>12 999 RU</b>
+                </div>
+                <img className="removeBtn" src="/img/btn-remove.svg"></img>
+              </div>
+              <div className="cartItem">
+                <img width={80} height={80} src="/img/sneakers/1.jpg"/>
+                <div className="cartName">
+                  <p>Мужские Кроссовки Nike Air Max 270</p>
+                  <b>12 999 RU</b>
+                </div>
+                <img className="removeBtn" src="/img/btn-remove.svg"></img>
+              </div>
+              <ul>
+                <li>
+                  <span></span>
+                  <div></div>
+                  <b></b>
+                </li>
+                <li>
+                  <span></span>
+                  <div></div>
+                  <b></b>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
       <header>
         <div className="headerLeft">
           <img width={40} height={40} src="/img/logo.png"/>
