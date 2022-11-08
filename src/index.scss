@@ -146,6 +146,8 @@ header {
   }
   
   .drawer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 420px;
   height: 100%;
@@ -153,16 +155,78 @@ header {
   background: #FFFFFF;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  .items {
+    overflow: auto;
+    margin-bottom: 40px;
+  }
 
   h2 {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
+    margin-bottom: 30px;
+    img {
+      cursor: pointer;
+    }
   }
+  }
+
+  .cartTotalBlock {
+    ul {
+      display: block;
+      margin-bottom: 40px;
+    }
+    li {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+    div {
+      flex: 1;
+      height: 1px;
+      border-bottom: 1px dashed #DFDFDF;
+      position: relative;
+      top: -4px;
+      margin: 0 7px;
+    }
+
+    .greenButton {
+      position: relative;
+      &:hover {
+        img {
+          transform: translateX(5px);
+        }
+      }
+      img {
+        position: absolute;
+        margin-right: 100px;
+        right: 30px;
+        top: 20px;
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+  }
+
+  .greenButton {
+      width: 100%;
+      height: 55px;
+      background: #9DD458;
+      border-radius: 18px;
+      border: 0;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500px;
+      cursor: pointer;
+      &:hover {
+        background: lighten( #9DD458, 5%);
+    }
   }
 
   .cartItem {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    overflow: hidden;
     p {
       margin-bottom: 5px;
       font-size: 16px;
@@ -185,5 +249,15 @@ header {
     &:hover {
       opacity: 1;
     }
+  }
+
+  .itemPrice {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .items {
+    flex: 1;
   }
   
