@@ -6,10 +6,22 @@ const arr = [
   {
     name: 'Мужские Кроссовки Nike Air Max 270',
     price: 12999,
+    image: '/img/sneakers/1.jpg'
   },
   {
     name: 'Мужские Кроссовки Blazzer Mid Suede',
     price: 15600,
+    image: '/img/sneakers/3.jpg'
+  },
+  {
+    name: 'Кроссовки Puma X Aka Boku',
+    price: 8999,
+    image: '/img/sneakers/2.png'
+  },
+  {
+    name: 'Мужские Кроссовки Blazzer Mid Suede',
+    price: 15600,
+    image: '/img/sneakers/5.jpg'
   }
 ]
 
@@ -28,17 +40,13 @@ function App() {
           </div>
         </div>
         <div className="sneakers">
-          <Card 
-          title = "Мужские Кроссовки Blazzer Mid Suede"
-          price = "12999"
-          image = "/img/sneakers/1.jpg"/>
-          <Card 
-          title = "Мужские Кроссовки Nike Air Max 270"
-          price = "15600"
-          image = "/img/sneakers/9.jpg"/>
-          {/* {arr.map((obj) => ( 
-          <Card/>
-          ))}  */}
+          {arr.map((obj) => ( 
+          <Card
+          title = {obj.name}
+          image = {obj.image}
+          price = {obj.price}
+          />
+          ))}
         </div>
       </div>
     </div>

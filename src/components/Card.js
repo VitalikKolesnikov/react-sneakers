@@ -1,6 +1,11 @@
 import App from "../App"
 
 function Card(props) {
+
+  const onClickButton = () => {
+    alert(props.title)
+  }
+
     return (
         <div className="card">
           <div className="favorite">
@@ -13,7 +18,7 @@ function Card(props) {
               <span>Цена:</span>
               <b>{props.price}</b>
             </div>
-            <button className="button">
+            <button className="button" onClick={onClickButton}>
               <img width={11} height={11} src="/img/plus.svg" alt="Plus"/>
             </button>
           </div>
