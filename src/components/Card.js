@@ -8,7 +8,7 @@ function Card(props) {
 
     return (
         <div className="card">
-          <div className="favorite">
+          <div className="favorite" onClick={props.onFavorite}>
             <img src="/img/heart-unl.svg" alt="heart"/>
           </div>
           <img width={133} height={112} src={props.image} alt="#"/>
@@ -18,7 +18,7 @@ function Card(props) {
               <span>Цена:</span>
               <b>{props.price}</b>
             </div>
-            <button className="button" onClick={onClickButton}>
+            <button className="button" onClick={props.onPlus}>
               <img width={11} height={11} src="/img/plus.svg" alt="Plus"/>
             </button>
           </div>

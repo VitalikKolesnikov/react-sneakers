@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from './components/Card';
 import Drawer from './components/Drawer';
 import Header from './components/Header';
@@ -26,7 +27,7 @@ const arr = [
 ]
 
 
-function App() {
+function App() { 
   return (
     <div className="wrapper">
       <Drawer/>
@@ -45,6 +46,8 @@ function App() {
           title = {obj.name}
           image = {obj.image}
           price = {obj.price}
+          onFavorite = {() => console.log('Нажали на избранное')}
+          onPlus = {() => console.log('Нажали на плюс')}
           />
           ))}
         </div>
